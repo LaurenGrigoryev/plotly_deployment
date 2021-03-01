@@ -1,30 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bellybutton Biodiversity Dashboard</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
+
 <body>
-
-  <body class="bg-dark">
-    <div class="wrapper">
-  
-      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-                <a class="navbar-brand" href="index.html">UFO Sightings</a>
-              </nav>
-              <div class="jumbotron">
-                <h1 class="display-4">The Truth is Out There</h1>
-              </div>
-
-                <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="JS/css/style.css">
 
   <div class="container">
     <div class="row">
@@ -37,6 +22,7 @@
       <div class="col-md-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
@@ -62,8 +48,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="./static/js/app.js"></script>
-  <script src="./static/js/bonus.js"></script>
+  <script src="plots.js"></script>
 
 </body>
 
